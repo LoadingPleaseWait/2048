@@ -104,6 +104,8 @@ HTMLActuator.prototype.positionClass = function (position) {
 };
 
 HTMLActuator.prototype.updateScore = function (score) {
+  score = score * 2;
+	
   this.clearContainer(this.scoreContainer);
 
   var difference = score - this.score;
@@ -121,7 +123,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
-  this.bestContainer.textContent = bestScore;
+  this.bestContainer.textContent = 1000000;
 };
 
 HTMLActuator.prototype.message = function (won) {
