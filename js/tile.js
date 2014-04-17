@@ -13,7 +13,8 @@ function Tile(position, value,won) {
   this.value = (value || 2) * 2;
   if(!won || this.value === 4096)
     this.value            = Math.min(2048,this.value);// squares are doubled but cant go over 2048 unless the game ended
-
+  if(this.value === 32)
+    this.value = 64;// prevent problems with 8s
   this.previousPosition = null;
   this.mergedFrom       = null; // Tracks tiles that merged together
 }
