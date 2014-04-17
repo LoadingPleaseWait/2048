@@ -1,3 +1,7 @@
+This is a fork of Gabriele Cirulli's 2048. It has a few modifications. :smile So this is a fork of a fork of a ... nevermind have fun.
+
+The README for Gabriele Cirulli's 2048 is below.
+
 # 2048
 A small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
 
