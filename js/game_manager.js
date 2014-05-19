@@ -81,8 +81,8 @@ GameManager.prototype.addRandomTile = function () {
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
-  if (this.storageManager.getBestScore() < this.score) {
-    this.storageManager.setBestScore(this.score);
+  if (this.storageManager.getBestScore() < this.score * this.score) {
+    this.storageManager.setBestScore(this.score * this.score);
   }
 
   // Clear the state when the game is over (game over only, not win)
@@ -158,7 +158,7 @@ GameManager.prototype.move = function (direction) {
 
         // Only one merger per row traversal?
         if (next && next.value === tile.value && !next.mergedFrom) {
-          var merged = new Tile(positions.next, tile.value * 2);
+          var merged =  new Tile(positions.next,tile.value * 2,self.won);
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);

@@ -108,9 +108,10 @@ HTMLActuator.prototype.positionClass = function (position) {
   return "tile-position-" + position.x + "-" + position.y;
 };
 
+//squares then updates the score
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
-
+  score = score * score;
   var difference = score - this.score;
   this.score = score;
 
