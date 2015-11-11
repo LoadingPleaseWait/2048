@@ -7,6 +7,8 @@
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -15,10 +17,29 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
   <meta name="format-detection" content="telephone=no" />
 
-  <meta property="og:title" content="2048 game"/>
-  <meta property="og:site_name" content="2048 game"/>
+  <meta name="apple-itunes-app" content="app-id=868076805">
+
+  <meta property="og:title" content="2048"/>
+  <meta property="og:site_name" content="2048"/>
   <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!"/>
   <meta property="og:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png"/>
+
+  <meta name="twitter:card" content="app" />
+  <meta name="twitter:site" content="@gabrielecirulli" />
+  <meta name="twitter:title" content="2048" />
+  <meta name="twitter:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!" />
+  <meta name="twitter:image" content="http://gabrielecirulli.github.io/2048/meta/og_image.png" />
+  <meta name="twitter:url" content="http://gabrielecirulli.github.io/2048/" />
+  <meta name="twitter:app:country" content="US">
+  <meta name="twitter:app:name:iphone" content="2048">
+  <meta name="twitter:app:id:iphone" content="868076805">
+  <meta name="twitter:app:url:iphone" content="https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805">
+  <meta name="twitter:app:name:ipad" content="2048">
+  <meta name="twitter:app:id:ipad" content="868076805">
+  <meta name="twitter:app:url:ipad" content="https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805">
+  <meta name="twitter:app:name:googleplay" content="2048">
+  <meta name="twitter:app:id:googleplay" content="com.gabrielecirulli.app2048">
+  <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.gabrielecirulli.app2048">
 </head>
 <body>
   <div class="container">
@@ -33,6 +54,11 @@
     <div class="above-game">
       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
       <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="app-notice">
+      <span class="notice-close-button">x</span>
+      <p><strong class="important">New:</strong> Get the new 2048 app for <a href="https://itunes.apple.com/us/app/2048-by-gabriele-cirulli/id868076805" target="_blank">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.gabrielecirulli.app2048" target="_blank">Android!</a></p>
     </div>
 
     <div class="game-container">
